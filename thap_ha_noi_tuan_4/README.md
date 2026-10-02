@@ -7,7 +7,7 @@ input
 số đĩa n=1
 cọc A B C 
 output
-chuyển đĩa từ A sang B
+A-B
 test case 2
 n=3 ( thứ tự từ trên xuống , đĩa 1 2 3 )
 A-B 
