@@ -1,7 +1,7 @@
 #include <stdio.h>
 void thaphanoi(int n, char a, char b , char c){
 if(n==1){
-    printf("\"%c-%c\\n\"\n", a, c);
+    printf("%c-%c\n", a, c);
     }
 else{
     thaphanoi(n-1,a,c,b);
@@ -10,7 +10,11 @@ else{
 }
 } 
 int main(){
-    int n=5;
+    int n;
+    while(1){
+    printf("nhập: ");
+    scanf("%d",&n);
     thaphanoi(n,'A','B','C');
+    }
     return 0;
 }
