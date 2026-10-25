@@ -1,0 +1,3 @@
+Hợp nhất tại chỗ hai mảng đã được sắp xếp
+Cho hai mảng đã được sắp xếp, X[]và Y[]có kích thước lần lượt là m và n, hãy hợp nhất các phần tử của X[]mảng với các phần tử của mảng Y[] mà vẫn giữ nguyên thứ tự đã sắp xếp, tức là, điền vào X[]bằng phần tử nhỏ nhất đầu tiên m và điền vào Y[]bằng các phần tử còn lại.
+Xét từng phần tử của mảng X[]và bỏ qua nó nếu nó đã ở đúng thứ tự (tức là phần tử nhỏ nhất trong số tất cả các phần tử còn lại); ngược lại, hãy hoán đổi nó với phần tử nhỏ nhất, đó chính là phần tử đầu tiên của mảng Y[]. Sau khi hoán đổi, di chuyển phần tử (hiện đang ở vị trí Y[0]) đến vị trí chính xác của nó trong mảng Y[]để duy trì thứ tự đã sắp xếp.
