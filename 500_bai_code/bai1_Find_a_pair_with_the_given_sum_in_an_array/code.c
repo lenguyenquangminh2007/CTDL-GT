@@ -18,8 +18,8 @@ void timcap(int A[],int n , int S){
         return;
     }
 int timthay=0;
-int *trai=A[0];
-int *phai=A[n-1];
+int *trai=&A[0];
+int *phai=&A[n-1];
 while(trai<phai){
     if(*trai+*phai==S){
         printf("(%d,%d)\n",*trai,*phai);
