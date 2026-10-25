@@ -1,20 +1,20 @@
 #include <stdio.h>
 void sum(int A[], int n , int target ){
-int S=0;
-for (int i = 0; i<n ;i++){
-    S+=A[i];
-    for (int j=i ; j<n; j++){
-        S+=A[j];
-        for (int k=j;k<n;k++){
-            S+=A[k];
-            for (int m=k;m<n;m++){
-                S+=A[m];
-            if(S==target){
+int found = 0;
+for (int i = 0; i<n-3 ;i++){
+    for (int j=i+1 ; j<n-2; j++){
+        for (int k=j+1;k<n-1;k++){
+            for (int m=k+1;m<n;m++){
+            if(A[i] + A[j] + A[k] + A[m]==target){
                 printf(" %d %d %d %d", A[i],A[j],A[k],A[m] );
+                found = 1;
             }
             }
         }
     }
+}
+if (!found){
+    printf("not found\n");
 }}
 int main(){
     int target;
